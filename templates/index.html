@@ -1,0 +1,79 @@
+<!doctype html>
+<head>
+    <title>Predicción en Línea - Azure Machine Learning</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<html>
+   <body>
+     <main>
+        <div class="px-4 py-3 my-2 text-center">
+
+          <div class="card-group px-4 py-3 my-2 text-center">
+            <div class="card">
+              <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/azure-icon.svg') }}" alt="Card image cap" width="192" height="192">
+            </div>
+            <div class="card">
+              <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/llenado.png') }}" alt="Card image cap" width="192" height="192">
+            </div>
+          </div>
+
+          <!--<img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/azure-icon.svg') }}" alt="Azure Logo" width="192" height="192"/>-->
+          <!-- <img  src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+          <h1 class="display-6 fw-bold text-primary">Predicción en Línea - Azure Machine Learning</h1>
+
+          <h2 class="display-7 fw-bold text-secondary">Grupo 1</h1>
+          
+        <!--
+        </div>
+        <div class="px-4 py-3 my-2 text-center">
+          <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/Foto.png') }}" alt="Card image cap" width="192" height="192">
+          <div class="d-block mx-auto mb-4ss">
+            <p class="display-8 fw-bold text-primary">Julián René Cháux Cedeño</p>
+          </div>
+        </div>
+        -->
+
+        <div class="card-group px-4 py-3 my-2 text-center">
+          <div class="card">
+            <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/Foto.png') }}" alt="Card image cap" width="192" height="192">
+            <div class="d-block mx-auto mb-4ss">
+              <p class="display-8 fw-bold text-secondary">Ramiro Andres Peñaranda Gutierrez</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/rios.jpg') }}" alt="Card image cap" width="192" height="192">
+            <div class="d-block mx-auto mb-4ss">
+              <p class="display-8 fw-bold text-secondary">Edwin Yesidh Rios Contreras</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/cudris.jpg') }}" alt="Card image cap" width="192" height="192">
+            <div class="d-block mx-auto mb-4ss">
+              <p class="display-8 fw-bold text-secondary">Jose Carlos Cudris Cantillo</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="d-block mx-auto mb-4" src="{{ url_for('static', filename='images/Foto.png') }}" alt="Card image cap" width="196" height="196">
+            <div class="d-block mx-auto mb-4ss">
+              <p class="display-8 fw-bold text-secondary">Julián René Cháux Cedeño</p>
+            </div>
+          </div>
+        </div>
+
+        <form method="post" action="{{url_for('hello')}}">
+            <div class="col-md-6 mx-auto text-center">
+                <label for="name" class="form-label fw-bold fs-5">Por favor, ingrese el dato a predecir:</label>
+
+                <!-- <p class="lead mb-2">Could you please tell me your name?</p> -->
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-items-center my-1">
+                    <input type="text" class="form-control" id="dato" name="dato" style="max-width: 256px;">
+                  </div>            
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center my-2">
+                  <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Predecir</button>
+                </div>            
+            </div>
+        </form>
+     </main>      
+   </body>
+</html>
